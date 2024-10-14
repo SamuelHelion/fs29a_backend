@@ -10,15 +10,22 @@ require('dotenv').config()
 //     database: process.env.DATABASE || 'backend'
 // })
 
+// const Connection = new Sequelize({
+//     dialect: 'postgres',
+//     host: 'localhost',
+//     port:  '5432',
+//     username: 'postgres',
+//     password: '1234',
+//     database: 'fs29'
+// })
 
 const Connection = new Sequelize({
     dialect: 'postgres',
-    host: 'localhost',
+    host: 'dpg-cs6pfgjqf0us73e8q1tg-a',
     port:  '5432',
-    username: 'postgres',
-    password: '1234',
-    database: 'fs29'
+    username: 'fs29_marcio_user',
+    password: 'VgbWkqPyLU6fb5s6c4dByKw7Ti2UxYUl',
+    database: 'fs29_marcio'
 })
-
 
 module.exports = Connection;
